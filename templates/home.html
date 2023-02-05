@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<form action="{{ url_for('predict')}}" method="post">
+        <input type="number" step="any" name="radius_mean" placeholder="radius_mean">
+        <input type="number" step="any" name="texture_mean" placeholder="texture_mean">
+        <input type="number" step="any"  name="perimeter_mean" placeholder="perimeter_mean">
+        <input type="number"  step="any"   name="area_mean" placeholder="area_mean">
+<!--        <input type="number" step="any"   name="smoothness_mean" placeholder="smoothness_mean">-->
+<!--        <input type="number" step="any"   name="compactness_mean" placeholder="compactness_mean">-->
+<!--        <input type="number" step="any"   name="concavity_mean" placeholder="concavity_mean">-->
+<!--        <input type="number" step="any"   name="concave points_mean" placeholder="concave points_mean">-->
+<!--        <input type="number" step="any"   name="symmetry_mean" placeholder="symmetry_mean">-->
+<!--        <input type="number" step="any"   name="fractal_dimension_mean" placeholder="fractal_dimension_mean">-->
+
+<!--        <input type="number" name="radius_se" placeholder="radius_se">-->
+<!--        <input type="number" name="texture_se" placeholder="texture_se">-->
+<!--        <input type="number" name="perimeter_se" placeholder="perimeter_se">-->
+<!--        <input type="number" name="area_se" placeholder="area_se">-->
+<!--        <input type="number" name="smoothness_se" placeholder="smoothness_se">-->
+<!--        <input type="number" name="compactness_se" placeholder="compactness_se">-->
+<!--        <input type="number" name="concavity_se" placeholder="concavity_se">-->
+<!--        <input type="number" name="concave points_se" placeholder="concave points_se">-->
+<!--        <input type="number" name="symmetry_se" placeholder="symmetry_se">-->
+<!--        <input type="number" name="fractal_dimension_se" placeholder="fractal_dimension_se">-->
+
+<!--        <input type="number" name="radius_worst" placeholder="radius_worst">-->
+<!--        <input type="number" name="texture_worst" placeholder="texture_worst">-->
+<!--        <input type="number" name="perimeter_worst" placeholder="perimeter_worst">-->
+<!--        <input type="number" name="area_worst" placeholder="area_worst">-->
+<!--        <input type="number" name="smoothness_worst" placeholder="smoothness_worst">-->
+<!--        <input type="number" name="compactness_worst" placeholder="compactness_worst">-->
+<!--        <input type="number" name="concavity_worst" placeholder="concavity_worst">-->
+<!--        <input type="number" name="concave points_worst" placeholder="concave points_worst">-->
+<!--        <input type="number" name="symmetry_worst" placeholder="symmetry_worst">-->
+<!--        <input type="number" name="fractal_dimension_worst" placeholder="fractal_dimension_worst">-->
+
+        <br><br>
+
+ <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+
+</form>
+
+<br>
+   <br>
+   {{ prediction_text }}
+
+</body>
+</html>
